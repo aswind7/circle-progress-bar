@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<style>
+		#my-canvas {
+			/*利用css控制canvas元素的宽高，解决失真问题*/
+			/*width: 20px; */
+		}
+	</style>
+</head>
+<body>
+	<canvas id="my-canvas" >
+	</canvas>
+	<script src="./circle-progress-bar.js">
+	</script>
+	<script>
+		var myCanvas = document.querySelector('#my-canvas');
+		var c1 = new CircleProgressBar({
+			canvasDom: myCanvas,
+			angle: Math.PI * 1.4,
+			duration: 1000,
+			text: '我是示例文本',
+			textFontSize: 10.4,
+			showPercent: true,
+			animationMode: 'accelerate'
+		});
+	</script>
+</body>
+</html>
