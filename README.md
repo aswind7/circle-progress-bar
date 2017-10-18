@@ -28,7 +28,7 @@ circle-progress-bar.js 是一款利用canvas绘制圆环进度条的插件，不
 
 ```
 {
-	canvasDom: CanvasDomNeedToSet, // 必填的canvas dom 
+	canvasDom: CanvasDomNeedToSet, 		   // 必填的canvas dom 
 	// 以下的数值为默认参数值
 	r: 30,				           // 内圆半径
 	lineWidth: 5, 				   // border宽度
