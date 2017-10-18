@@ -51,8 +51,10 @@ circle-progress-bar.js 是一款利用canvas绘制圆环进度条的插件，不
 --- | --- | --- | --- | --- | ---
 Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 10+ ✔ 
 
-### Tips
+### FAQ
 * **此插件运行方向均为顺时针，暂时不支持逆时针；**
+
+* **强烈不建议设置lineWitdh值为奇数！因为奇数线条宽度会在canvas中发虚（原因是剩余的0.5px宽度的线条颜色会变淡）**
 
 * **当showPercent为true时，同时又存在text: '示例文字' ，则'示例文字'不会出现，只会出现百分比文字；**  
  
