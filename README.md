@@ -30,18 +30,18 @@ circle-progress-bar.js 是一款利用canvas绘制圆环进度条的插件，不
 {
 	canvasDom: CanvasDomNeedToSet, // 必填的canvas dom 
 	// 以下的数值为默认参数值
-	r: 30,						   // 内圆半径
+	r: 30,				           // 内圆半径
 	lineWidth: 5, 				   // border宽度
-	lineColor: '#3385ff', 		   // border进度条颜色
-	lineBgColor: '#eeeeee',        // border背景颜色
-	angle: Math.PI * 0.5,          // 需要转动的角度
-	startAngle: -Math.PI * 0.5,    // 起始角度
+	lineColor: '#3385ff', 		   	   // border进度条颜色
+	lineBgColor: '#eeeeee',        		   // border背景颜色
+	angle: Math.PI * 0.5,          		   // 需要转动的角度
+	startAngle: -Math.PI * 0.5,    		   // 起始角度
 	duration: 1000,				   // 过渡时间, 单位:ms
 	text: '',    				   // 圆圈中的文字
 	showPercent: true, 			   // 是否显示百分比数值
 	textFontSize: 12, 			   // 文字大小 (px)
-	textColor: '#3385ff', 		   // 文字颜色
-	animationMode: 'linear'        // 'linear' || 'accelerate' || 'decelerate'  匀速，加速， 减速
+	textColor: '#3385ff', 		  	   // 文字颜色
+	animationMode: 'linear'        		   // 'linear' || 'accelerate' || 'decelerate'  匀速，加速， 减速
 }
 ```
 
