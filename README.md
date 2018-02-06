@@ -3,9 +3,10 @@ circle-progress-bar.js 是一款利用canvas绘制圆环进度条的插件，不
 效果如图：   
 ![](http://owbd0ue91.bkt.clouddn.com/aabc.gif)
 # 用法
-### 下载
-`git clone` 此仓库，然后在html中引用 lib文件夹中的`circle-progress-bar.js`即可。
 ### 基础用法
+
+`git clone` 此仓库，然后在html中引用 lib文件夹中的`index.js`即可。
+
 ```
 <style>
 	#my-canvas {
@@ -24,6 +25,34 @@ circle-progress-bar.js 是一款利用canvas绘制圆环进度条的插件，不
 	});
 </script>
 ```
+
+### CommonJS用法
+⚠️Tips: ----请注意: npm 包名是**mini-circle-progress-bar** 而非 circle-progress-bar!!
+
+npm i mini-circle-progress-bar   
+
+
+**ES Module:**
+
+```
+import Bar from 'mini-circle-progress-bar'
+var c1 = new Bar({
+	canvasDom: myCanvas
+});
+
+```
+
+**CommonJS :**
+
+```
+var Bar = require 'mini-circle-progress-bar'
+var c1 = new Bar({
+	canvasDom: myCanvas
+});
+
+```
+
+
 ### 参数配置
 
 ```
@@ -68,3 +97,6 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 10+ ✔
 * **如何解决文字换行的问题？**   
 此插件不支持文字换行，文字过多时会造成canvas的显示不正常。   
 解决方案： 设置参数`showPercent: false`, 然后用户自己编写文字元素并利用定位调整到圆环中心显示。
+
+* **如何适配移动端？**   
+可以当页面加载完成时，先获取需要的画布的宽度，然后再渲染此进度条。

@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title> 
+	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<style>
 		#my-canvas {
 			/*利用css控制canvas元素的宽高，解决失真问题*/
-			width: 50px; 
+			width: 50px;
 			border: 10px solid red;
 		}
 	</style>
 </head>
+
 <body>
-	<canvas id="my-canvas" >
+	<canvas id="my-canvas">
 	</canvas>
-	<script src="./lib/circle-progress-bar.js">
+	<script src="../lib/index.js">
 	</script>
 	<script>
 		var myCanvas = document.querySelector('#my-canvas');
@@ -31,4 +33,5 @@
 		});
 	</script>
 </body>
+
 </html>

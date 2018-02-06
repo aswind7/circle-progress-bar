@@ -1,0 +1,25 @@
+{
+  "name": "mini-circle-progress-bar",
+  "version": "1.0.1",
+  "description": "A light-weight circle-progress-bar plugin made by canvas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqfbeijing/circle-progress-bar.git"
+  },
+  "keywords": [
+    "circle-progress-bar",
+    "circle",
+    "bar",
+    "progress-bar"
+  ],
+  "author": "giovanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sqfbeijing/circle-progress-bar/issues"
+  },
+  "homepage": "https://github.com/sqfbeijing/circle-progress-bar#readme"
+}
